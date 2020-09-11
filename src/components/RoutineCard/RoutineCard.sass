@@ -1,5 +1,24 @@
 .routine-card
+    width: 500px
     border-radius: 2rem
-    &__action
-        border-bottom-left-radius: 2rem
-        border-bottom-right-radius: 2rem
+    &__prev
+        transform-origin: left
+        transform: perspective(500px) rotateY(45deg) scale(0.6)
+    &__active
+        transform: none
+    &__next
+        transform-origin: left
+        transform: scale(0.6)
+    &__wrapper
+        &__active
+            width: 500px
+            margin: 0 140px 0 50px 
+        &__prev
+            width: 15px
+            height: 80%
+            margin: 0 2px
+        &__next
+            width: calc(500px*0.6)
+            height: 80%
+            margin: 0 2px
+    

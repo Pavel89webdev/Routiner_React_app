@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-//import '../../libs/materialize/sass/materialize.scss';
 import './RoutineSlider.sass';
 import RoutineCard from '../RoutineCard';
 
@@ -16,18 +15,24 @@ class RoutineSlider extends Component{
     render(){
 
         return (
-            <div className="slider">
+            <div className="routine-slider">
                 <div className="container">
-                    <div className="row">
-                        <div className="slider__prev-button col s1">prev</div>
-                        <div className="slider__inner col s10">
-                            <RoutineCard/>
-                            {/* <RoutineCard/>
-                            <RoutineCard/>
-                            <RoutineCard/>
-                            <RoutineCard/> */}
+                    <div className="row routine-slider__container">
+                        <div className="routine-slider__prev-button col s1">prev</div>
+                        <div className="routine-slider__inner col s10">
+                            <div className="routine-slider__content">
+                                <RoutineCard slidePosition="prev"/>
+                                <RoutineCard slidePosition="prev"/>
+                                <RoutineCard slidePosition="prev"/>
+                                <RoutineCard slidePosition="prev"/>
+                                <RoutineCard slidePosition="prev"/>
+                                <RoutineCard slidePosition="prev"/>
+                                <RoutineCard slidePosition="active"/>
+                                <RoutineCard slidePosition="next"/>
+                                <RoutineCard slidePosition="next"/>
+                            </div>
                         </div>
-                        <div className="slider__next-button col s1">next</div>
+                        <div className="routine-slider__next-button col s1">next</div>
                     </div>
                 </div>
             </div>

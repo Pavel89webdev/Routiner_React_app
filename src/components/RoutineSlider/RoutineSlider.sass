@@ -1,10 +1,29 @@
-.slider
+.routine-slider
+    display: flex
+    justify-content: flex-start
+    align-items: center
     background: #b8b8b8
+    min-height: 200px
+    &__container
+        height: 600px
     &__inner
+        position: relative
+        overflow: hidden
+        height: 100%
+    &__content
+        position: absolute
+        left: 0px
+        top: 0px
         display: flex
+        align-items: flex-end
+        justify-content: flex-start
+        width: 3700px
+        height: 100%
+    &__prev-button, &__next-button
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #fff
+        border: 1px solid rgb(158, 158, 158)
+        height: 100%
 
-// .glide__slide
-//     transform: perspective(100px) rotateY(8deg) scale(0.8)
-//     transition: 0.2s all
-//     &--active
-//         transform: scale(1.2)

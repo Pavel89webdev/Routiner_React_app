@@ -22,13 +22,13 @@ export default class RoutineCard extends Component {
 
         return(
             
-        <div className="col m8 offset-m2 ">
-            <div className="routine-card card grey lighten-5 z-depth-4">
+        <div className={`routine-card__wrapper routine-card__wrapper__${this.props.slidePosition}`}>
+            <div className={`card routine-card routine-card__${this.props.slidePosition}`}>
                 <div className="card-content black-text">
-                    <h4 className="grey-text">
+                    <h4 className="grey-text center-align">
                     Wensday
                     </h4>
-                    <h4 className="grey-text">3.10.2020</h4>
+                    <h4 className="grey-text center-align">3.10.2020</h4>
                     <ul className="left-align">
                         <Hr title="morning"/>
                         <Checkbox/>
